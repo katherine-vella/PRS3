@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>P,R,S - Results</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+ </head>
+
+ <body>
+   <% include global/header %>
+   <div id="results">
+     <h2> Results! Who won? </h2>
+      <p>  <%=user.name%> chose <%=user.weapon%>, <%=villain.name%> chose <%=villain.weapon%>. So... The winner is <%=winner.winner%>!! </p>
+
+    <div id="img_container_div">
+
+
+    <object id = "villain_image" type="image/svg+xml" data="../images/<%=villain.name.replace(' ', '_').toLowerCase()%>_<%=villain.weapon.toLowerCase()%>.svg" width = "150vw" height = "150vh"></object>
+    <img id="player_image" src="../images/user_<%=user.weapon.toLowerCase()%>.png" height=135; width=135;>
+    </div>
+
+    </div>
+  <form action="/playagain" method="Get" align= center>
+     <input type="submit" name="Play Again" class = "header_button" value="Play Again!">
+  </form>
+    <br>
+
+   </form>
+
+   <% include global/footer %>
+  <script src="scripts/scripts.js"></script>
+</body>
+</html>

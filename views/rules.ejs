@@ -1,0 +1,33 @@
+<!--As of 01/07/19 this is pretty much set-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>P,R,S - Rules</title>
+  <link rel="stylesheet" href="styles/style.css">
+ </head>
+
+<body>
+  <% include global/header %>
+
+  <div id="rules">
+    <h2>Rules</h2>
+    The game of P, R, S is based on trust, skill and determination.
+    Each player must:
+    <ul>
+      <li>Choose either rock, paper, or scissors.</li>
+      <li>The browser will also choose either rock, paper, or scissors.</li>
+      <li>If both you and the browser pick the same thing, you tie. </li>
+      <li>Rock beats scissors, paper beats rock, and scissors beats paper.</li>
+      <li>Click on the Stats button to check on how you match up.</li>
+    </ul>
+    <p>If you want to learn more, check out the official rock, paper, scissors organization
+           <a href="https://www.wrpsa.com/">by clicking here</a> </p>
+           <form action="/playagain" method="Get" align= center>
+              <input type="submit" name="Play Again" class = "header_button" value="Play Again!">
+           </form>
+  </div>
+  <% include global/footer %>
+  <script src="scripts/scripts.js"></script>
+ </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>P,R,S - Index</title>
+  <link rel="stylesheet" href="styles/style.css">
+ </head>
+
+<body>
+  <% include global/header %> <!-- All this does is load the header we have -->
+
+  <div id="feedback" class = "negative">
+  <p>  <%if (user.failure === 4){%>
+      Wrong Password, please try again.
+    <%} else {%>Please Log In<%}%> </p>
+  </div>
+  <div id="enter_name">
+    <h2>Welcome to Paper, Rock, Scissors</h2>
+    <br>
+
+  <!--  if(login!)  include some form of login/logout       -->
+    <form action="/login" method="get" >
+      Please enter your username: <input type="text" id="user_name" name="user_name" align="center" >
+      Please enter your password: <input type="text" id="user_password" name="user_password" align="center">
+      <br> <br>
+      <input type="submit" id="user_login" name="Login!" value="Login" class= "header_button" align="right">
+
+    </form>
+
+
+
+
+    <!--ADD CSS TO INDEX.EJS TO WORK WITH AND LOOK BETTER -->
+  </div>
+  <% include global/footer %>
+  <script src="scripts/scripts.js"></script>
+ </body>
+</html>
